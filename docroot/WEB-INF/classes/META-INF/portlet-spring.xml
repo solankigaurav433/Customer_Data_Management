@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.liferay.docs.service.CustomerLocalService" class="com.liferay.docs.service.impl.CustomerLocalServiceImpl" />
+	<bean id="com.liferay.docs.service.CustomerService" class="com.liferay.docs.service.impl.CustomerServiceImpl" />
+	<bean id="com.liferay.docs.service.persistence.CustomerPersistence" class="com.liferay.docs.service.persistence.CustomerPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.docs.service.ServicesLocalService" class="com.liferay.docs.service.impl.ServicesLocalServiceImpl" />
+	<bean id="com.liferay.docs.service.ServicesService" class="com.liferay.docs.service.impl.ServicesServiceImpl" />
+	<bean id="com.liferay.docs.service.persistence.ServicesPersistence" class="com.liferay.docs.service.persistence.ServicesPersistenceImpl" parent="basePersistence" />
+</beans>
